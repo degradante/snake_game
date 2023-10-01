@@ -64,6 +64,7 @@ void draw(vector<Point> &snake, vector<Point> &food, Go go) {
                         mvaddch(y, x + 1, '>');
                         break;
                 }
+                check = true;
             }
             // i = 1 because head drawing upper
             for (size_t i = 1; i < snake.size(); ++i) {
